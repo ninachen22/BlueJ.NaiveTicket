@@ -21,13 +21,17 @@ Work through all these exercises. You edit this file with your answers for these
 	* You can insert several separate amounts of money into the machine, just like you might insert multiple coins or notes into a real machine. Try inserting the exact amount required for a ticket. As this is a simple machine, a ticket will not be issued automatically, so once you have inserted enough money, call the `printTicket` method. A facsimile ticket should be printed in the BlueJ terminal window.
 
 ### Exercise 2.2
-* What value is returned if you check the machine’s balance after it has printed a ticket?
+* What value is returned if you check the machine’s balance after it has printed a ticket? 
+The balance is 0.
 
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
-	* Do you notice anything strange about the machine’s behavior?
+	* Do you notice anything strange about the machine’s behavior? 
+	It prints a ticket with the updated amount inserted. Balance also resets to 0.
 	* What happens if you insert too much money into the machine – do you receive any refund?
+	It prints a ticket without refund.
 	* What happens if you do not insert enough and then try to print a ticket?
+	It prints ticket still.
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -36,9 +40,16 @@ Work through all these exercises. You edit this file with your answers for these
 * Create another ticket machine for tickets of a different price.
 	* Buy a ticket from that machine.
 	* Does the printed ticket look different?
+	Printed ticket reflects the new price of the ticket.
 
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
+public class Student
+{
+}
+public class LabClass
+{
+}
 
 ### Exercise 2.7
 Does it matter whether we write<br>
@@ -46,19 +57,27 @@ Does it matter whether we write<br>
 or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
+Yes, writing 'class public TicketMachine' does not compile.
 
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
+	Yes, the diagram shows a crosshatch pattern.
 	* What error message do you get when you now press the compile button?
+	class, interface, enum, or record expected
 	* Do you think this message clearly explains what is wrong?
+	No
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+Yes, it is possible
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
+	Fields: insertMoney, incrementTicketNumber
+	Constructors: ticketCost
+	Methods: getPrice, getTicketNumber, getBalance, calculateTotal, printTicket
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
