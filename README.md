@@ -65,7 +65,7 @@ Yes, writing 'class public TicketMachine' does not compile.
 	* What error message do you get when you now press the compile button?
 	class, interface, enum, or record expected
 	* Do you think this message clearly explains what is wrong?
-	No
+	Yes, because the error message when you hover over the red squiggle after class says <identifier> expected.
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
