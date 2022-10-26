@@ -145,6 +145,6 @@ public Book(String title, double price)
 * Can you guess what types some of the `Book` class’s fields might be? 
 	Field types could be strings and floats
 * Can you assume anything about the names of its fields?
-	The field names are probably title, author, publisher, etc.
+	The field names could be title, author, publisher, etc. something related to the class Book.
 
 READ upto and INCLUDING section 2.15 of this chapter.
