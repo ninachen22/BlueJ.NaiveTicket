@@ -136,15 +136,15 @@ public Student(String name)
 
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
-	There are 2 parameters. They are string and int.
+	There are 2 parameters. They are string and double.
 ```
 public Book(String title, double price)
 ```
 
 ### Exercise 2.18
 * Can you guess what types some of the `Book` class’s fields might be? 
-	Fields could be title, author, publisher, etc.
+	Field types could be strings and floats
 * Can you assume anything about the names of its fields?
-	The field types are probably strings
+	The field names are probably title, author, publisher, etc.
 
 READ upto and INCLUDING section 2.15 of this chapter.
