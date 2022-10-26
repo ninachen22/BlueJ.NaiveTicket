@@ -75,29 +75,30 @@ Yes, it is possible
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
-	Fields: insertMoney, incrementTicketNumber
-	Constructors: ticketCost
-	Methods: getPrice, getTicketNumber, getBalance, calculateTotal, printTicket
+	Fields: price, balance, total
+	Constructors: ticketMachine
+	Methods: getPrice, getBalance, insertMoney, printTicket
 
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
+	No
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
 ```java
-private int count;
-private Student representative;
-private Server host;
+private int count; int
+private Student representative; non-primitive/string
+private Server host; non-primitive/string
 ```
 
 ### Exercise 2.12
 * What are the names of the following fields?
 
 ```java
-private boolean alive;
-private Person tutor;
-private Game game;
+private boolean alive; alive
+private Person tutor; tutor
+private Game game; game
 ```
 ### Exercise 2.13
 
@@ -107,35 +108,43 @@ In the following field declaration from the TicketMachine class<br>
 private int price;
 ```
 does it matter which order the three words appear in?
+	Yes
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
 possible?
+	Yes, it will show crosshatches if it is not able to compile and is an error
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14
 * Is it always necessary to have a semicolon at the end of a field declaration?
+	Yes, if not you will get error saying ';' expected
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
 
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
+	int status;
 
 ### Exercise 2.16
 * To what class does the following constructor belong?
+	Belongs to Student.
 ```
 public Student(String name)
 ```
 
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
+	There are 2 parameters. They are string and int.
 ```
 public Book(String title, double price)
 ```
 
 ### Exercise 2.18
-* Can you guess what types some of the `Book` class’s fields might be?
+* Can you guess what types some of the `Book` class’s fields might be? 
+	Fields could be title, author, publisher, etc.
 * Can you assume anything about the names of its fields?
+	The field types are probably strings
 
 READ upto and INCLUDING section 2.15 of this chapter.
